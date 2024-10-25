@@ -1,1 +1,8 @@
+malloc(size) : returns to newly-allocated HEAP MEMORY of size byte. Crucial feature is that HEAP MEMORY is far away from STACK MEMORY, 
+and malloc guarantees that the caller gets exclusive access to that memory.
+
+When would we use heap vs. stack memory?
+→ When the data will outlive the current function call, it MUST be heap memory (or copied on return)
+
+calloc(count, size) : returns count * size.
 
